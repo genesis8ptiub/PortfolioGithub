@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/ENCOURAGE01.png");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+/* INDEX3.PHP */
+
+.container-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container-content h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.main-content h2 {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.main-content span {
+    color: rgb(224, 127, 127);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+/* responsive */
+
+@media (max-width: 576px) {
+    body {
+        background-size: cover;
+        background-position-x: center;
+    }
+    .container-content {
+        padding: 20px 30px;
+    }
+    .container-content h1 {
+        font-size: x-large;
+    }
+    #container-content2 {
+        padding: 20px 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #container-content2 h1 {
+        font-size: large;
+    }
+    #container-content2 h4 {
+        font-size: small;
+    }
+    #container-content2 p {
+        font-size: x-small;
+    }
+    .form-control-content {
+        width: 260px;
+    }
+    .btn-log {
+        padding: 10px 5px;
+    }
+    .btn {
+        font-size: small;
+    }
+    .vr {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    #container-content2 {
+        padding: 30px 50px 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

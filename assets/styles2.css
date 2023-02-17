@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/ENCOURAGE01.png");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+/* INDEX2.PHP */
+
+.container-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container-content h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.main-content h2 {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.main-content span {
+    color: rgb(224, 127, 127);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.container-content h4 {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: lightblue;
+    padding: 10px 15px;
+}
+
+.btn:hover {
+    background-color: rgb(173, 216, 230, 0.7);
+    transition: 0.5s;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+/* responsive */
+
+@media (max-width: 576px) {
+    body {
+        background-size: cover;
+        background-position-x: center;
+    }
+    .container-content {
+        padding: 20px 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .container-content h1 {
+        font-size: x-large;
+    }
+    .btn {
+        font-size: small;
+    }
+    .vr {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    #container-content2 {
+        padding: 30px 50px 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

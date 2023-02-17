@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/ENCOURAGE01.png");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+/* INDEX4.PHP */
+
+.container-content {
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container-content #title {
+    color: rgb(224, 127, 127);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.container-content .main-content p {
+    text-align: justify;
+}
+
+.container-content .bottom-content a {
+    text-decoration: none;
+    height: 40px;
+    width: 100px;
+}
+
+.container-content .bottom-content a:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+}
+
+
+/* responsive */
+
+@media (min-width: 991px) {
+    .container-content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .container-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-content {
+        width: 85%;
+    }
+    .container-content #title {
+        color: rgb(224, 127, 127);
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .container-content .main-content p {
+        font-size: 14px;
+    }
+    .container-content .bottom-content a {
+        font-size: 14px;
+        text-decoration: none;
+        height: 35px;
+        width: 70px;
+    }
+    .container-content .bottom-content p {
+        font-size: 12px;
+    }
+}

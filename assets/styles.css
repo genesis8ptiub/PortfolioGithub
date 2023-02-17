@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/ENCOURAGE01.png");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+/* INDEX.PHP */
+
+.container-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-content h1 span {
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.container-content h1 span img {
+    display: block;
+    margin: 10px 0;
+    max-height: 120px;
+}
+
+.container-content a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn-con {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-log {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    background: lightblue;
+    padding: 15px 5px;
+    font-family: inherit;
+    font-size: large;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn-log:hover {
+    background-color: rgb(173, 216, 230, 0.5);
+    transition: 0.3s;
+}
+
+.btn-log:focus {
+    outline: 0;
+}
+
+.btn-log:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.form-control-content {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 400px;
+}
+
+.form-control-content input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control-content input:focus,
+.form-control-content input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control-content label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control-content label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control-content input:focus+label span,
+.form-control-content input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+.foot a {
+    color: rgb(167, 102, 228);
+    text-decoration: none;
+}
+
+
+/* responsive */
+
+@media (max-width: 576px) {
+    body {
+        background-size: cover;
+        background-position-x: center;
+    }
+    .container-content {
+        padding: 20px 30px;
+    }
+    .container-content h1 {
+        font-size: x-large;
+    }
+    #container-content2 {
+        padding: 20px 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #container-content2 h1 {
+        font-size: large;
+    }
+    #container-content2 h4 {
+        font-size: small;
+    }
+    #container-content2 p {
+        font-size: x-small;
+    }
+    .form-control-content {
+        width: 260px;
+    }
+    .btn-log {
+        padding: 10px 5px;
+    }
+    .btn {
+        font-size: small;
+    }
+    .vr {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    #container-content2 {
+        padding: 30px 50px 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
